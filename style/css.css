@@ -2,7 +2,7 @@
 
 .wrap{ width:720px; background-color: blueviolet; }
 
-.main{ width:720px; height:800px; background-color: rgb(255, 255, 255); }
+.main{ width:720px; height:800px; background-color: rgb(255, 255, 255); background-image: url("../img/main_img01.jpg");}
 .main_img{}
 .main_text{ text-align: center; position:relative; top:50%; transform: translateY(-50%);}
 .main_t01{ font-size: 30px; color:#0070C0 ;}
