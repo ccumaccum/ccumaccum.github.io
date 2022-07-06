@@ -1,0 +1,33 @@
+* {margin:0 auto; padding:0;  font-size:16px;}
+
+.wrap{ width:720px; background-color: blueviolet; }
+
+.main{ width:720px; height:800px; background-color: rgb(255, 255, 255); }
+.main_img{}
+.main_text{ text-align: center; position:relative; top:50%; transform: translateY(-50%);}
+.main_t01{ font-size: 30px; color:#0070C0 ;}
+.main_t02{ font-size: 40px; padding-top: 15px;}
+.main_t03{ font-size: 64px; padding-top: 5px; letter-spacing: -5px;}
+.main_t04{ font-size: 30px; padding-top: 15px;}
+
+.banner{ width:720px; height:200px;}
+.banner_text{ text-align: center; position:relative; top:50%; transform: translateY(-50%);}
+.banner_t01{ font-size: 30px; font-weight: bold; }
+.banner_t02{ font-size: 40px; padding-top: 10px;  font-weight: bold;}
+
+.best{}
+.best_01{ width:720px; height:480px; background-color: rgb(189, 59, 178); }
+.best div p{font-weight: bold; text-align: center; position:relative;top:50%; transform: translateY(-50%);}
+.best_02{ width:720px; height:480px; background-color: rgb(62, 72, 85); }
+
+.content{}
+.content_01{ width:720px; height:480px; background-color: rgb(189, 59, 178); }
+.content_02{ width:720px; height:480px; background-color: rgb(62, 72, 85); }
+
+.event{ }
+.event_01{ width:720px; height:480px; background-color: rgb(189, 59, 178); }
+.event div p{font-weight: bold; text-align: center; position:relative; top:50%; transform: translateY(-50%);}
+.event_02{ width:720px; height:480px; background-color: rgb(62, 72, 85); }
+
+.check{ width:720px; height:180px; background-color: rgb(47, 135, 218);}
+.check p { text-align: center; position:relative; top:50%; transform: translateY(-50%);}
