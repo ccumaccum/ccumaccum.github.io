@@ -12,16 +12,15 @@ function getData(data){
 
 function getTag(data){
 	resetData(data);
-	//console.log(data);
 }
 
 function getTool(data){
 	resetData(data);
-	//alert(data);
 }
 
 
 function getDetail(){
+	modalNum = 1;
 	setImg();
 	setSpan();
 	let modal = document.getElementById('modal');
@@ -51,7 +50,20 @@ function setSpan(){
 }
 
 function closeDetail(){
-	
 	let modal = document.getElementById('modal');
 	modal.classList.remove('active');
+}
+
+function getImgPop(){
+	let url = "../images/product/images/"+modalIdx+"/"+modalNum+".jpg";
+	let name = modalNum+".jpg";
+
+	let _width = '1200';
+	let _height = '900';
+ 
+	// 팝업을 가운데 위치시키기 위해 아래와 같이 값 구하기
+	let _left = Math.ceil(( window.screen.width - _width )/2);
+	let _top = Math.ceil(( window.screen.height - _height )/2); 
+ 
+	window.open(url, name, 'width='+ _width +', height='+ _height +', left=' + _left + ', top='+ _top );
 }
