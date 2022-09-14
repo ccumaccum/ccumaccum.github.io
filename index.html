@@ -15,12 +15,14 @@
 </head>
 <body>
 	<div class="modal" id="modal">
-		<a href="#" onclick="closeDetail();"><div class="modal_background" id=""></div></a>
+		<a onclick="closeDetail();" style="cursor:pointer;"><div class="modal_background" id=""></div></a>
 		<table>
 			<tr>
 				<td>
 					<div class="modal_left">
-						<a href="#" onclick="modalImgChange(-1);"><</a>
+						<a onclick="modalImgChange(-1);" style="cursor:pointer;">
+							<img src="images/before.png" alt="no"/>
+						</a>
 					</div>
 				</td>
 				<td>
@@ -30,7 +32,9 @@
 				</td>
 				<td>
 					<div class="modal_right">
-						<a href="#" onclick="modalImgChange(1);">></a>
+						<a onclick="modalImgChange(1);" style="cursor:pointer;">
+							<img src="images/next.png" alt="no"/>
+						</a>
 					</div>
 				</td>
 			</tr>
