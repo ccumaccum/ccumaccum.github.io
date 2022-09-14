@@ -58,8 +58,8 @@ function getImgPop(){
 	let url = "../images/product/images/"+modalIdx+"/"+modalNum+".jpg";
 	let name = modalNum+".jpg";
 
-	let _width = '1200';
-	let _height = '900';
+	let _width = window.screen.width ;
+	let _height = window.screen.height;
  
 	// 팝업을 가운데 위치시키기 위해 아래와 같이 값 구하기
 	let _left = Math.ceil(( window.screen.width - _width )/2);
