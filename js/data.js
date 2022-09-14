@@ -43,3 +43,9 @@ function setImg(){
 	let img = document.getElementById('modal_img');
 	img.setAttribute('src' , loc);
 }
+
+function closeDetail(){
+	
+	let modal = document.getElementById('modal');
+	modal.classList.remove('active');
+}
