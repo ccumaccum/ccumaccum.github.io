@@ -22,13 +22,13 @@
 .modal_left{
 	position:fixed;
 	top:50%;
-	left:10%;
+	left:15%;
 	transform: translateX(-50%);
 }
 .modal_right{
 	position:fixed;
 	top:50%;
-	right:10%;
+	right:15%;
 	transform: translateX(-50%);
 }
 .modal_contents{
@@ -39,7 +39,7 @@
 	transform: translate(-50%, -50%);
 }
 .modal_contents img{
-	width:70vw;
+	width:60vw;
 }
 
 .active{
