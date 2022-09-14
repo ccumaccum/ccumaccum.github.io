@@ -25,11 +25,26 @@
 	left:15%;
 	transform: translateX(-50%);
 }
+.modal_left_area{
+	position:fixed;
+	top:-225%;
+	left:-220%;
+	width:10vw;
+	height:30vh;
+}
+
 .modal_right{
 	position:fixed;
 	top:50%;
 	right:15%;
 	transform: translateX(-50%);
+}
+.modal_right_area{
+	position:fixed;
+	top:-225%;
+	right:-300%;
+	width:10vw;
+	height:30vh;
 }
 .modal_contents{
 	
