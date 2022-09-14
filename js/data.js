@@ -23,7 +23,7 @@ function getTool(data){
 
 function getDetail(){
 	setImg();
-	
+	setSpan();
 	let modal = document.getElementById('modal');
 	modal.classList.add('active');
 }
@@ -42,6 +42,12 @@ function setImg(){
 	let loc = 'images/product/images/'+modalIdx+'/'+modalNum+'.jpg';
 	let img = document.getElementById('modal_img');
 	img.setAttribute('src' , loc);
+}
+
+function setSpan(){
+	let setSpan = document.getElementById('modal_detail_span');
+	let val = document.getElementById('detail_'+modalIdx).value;
+	setSpan.innerHTML = val;
 }
 
 function closeDetail(){

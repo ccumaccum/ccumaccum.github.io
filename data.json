@@ -6,7 +6,8 @@ data = [
         "box" : "printout",
         "image" : "01",
         "tag" : "#Photoshop #심플 #블루 #로고중심 #명함디자인",
-        "type" : "1"
+        "type" : "1",
+		"detail" : "디테일 페이지의 1번 설명입니다.",
     },
     {
         "title" : "[blockchain] BIBLECOIN IR 자료",
@@ -14,7 +15,8 @@ data = [
         "box" : "reference",
         "image" : "02",
         "tag" : "#픽토그램 #블루 #IR디자인 #투자설명 #Photoshop",
-        "type" : "2"
+        "type" : "2",
+		"detail" : "디테일 페이지의 2번 설명입니다.",
     },
     {
         "title" : "[스트림코인] TNC그룹 스트림스테이킹..",
@@ -22,7 +24,8 @@ data = [
         "box" : "evnet",
         "image" : "03",
         "tag" : "#Photoshop #심플 #레드 #이벤트디자인 #혜택안내",
-        "type" : "1"
+        "type" : "1",
+		"detail" : "디테일 페이지의 3번 설명입니다.",
     },
     {
         "title" : "[메이톡] 컨퍼런스콜 공지",
@@ -30,7 +33,8 @@ data = [
         "box" : "evnet",
         "image" : "04",
         "tag" : "#이벤트디자인 #Photoshop #그린 #컨퍼런스콜 #공지디자인",
-        "type" : "0"
+        "type" : "0",
+		"detail" : "디테일 페이지의 4번 설명입니다.",
     },
     // 2
     {

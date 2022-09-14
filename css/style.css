@@ -48,7 +48,6 @@
 	opacity:0.3;
 }
 .modal_contents{
-	
 	position:fixed;
 	top:50%;
 	left:50%;
@@ -56,6 +55,19 @@
 }
 .modal_contents img{
 	width:60vw;
+}
+
+.modal_detail{
+	width:60vw;
+	height:100px;
+	position:fixed;
+	bottom:3%;
+	left:50%;
+	transform: translate(-50%, 0%);
+}
+
+.modal_detail_span{
+	color:#fff;
 }
 
 .active{
@@ -115,6 +127,9 @@ ul.lv2 li:hover a{color:rgb(235, 5, 78); background: rgb(247, 214, 223);}
 
 .banner{position:relative;}
 .banner h2{position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); font-size: 18px; font-weight: 600; background: #fff; padding:10px;}
+.banner a img {
+	border-radius: 20px;
+}
 
 /* footer ---------------------------------------------------------------------------------------- */
 footer{width: 100%; height: 100px; background: #e90a4d;}
