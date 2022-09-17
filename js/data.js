@@ -11,11 +11,11 @@ function getData(data){
 }
 
 function getTag(data){
-	resetData(data);
+	searchData(data);
 }
 
 function getTool(data){
-	resetData(data);
+	searchData(data);
 }
 
 
