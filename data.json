@@ -23,7 +23,7 @@ data = [
     {
         "title" : "[스트림코인] TNC그룹 스트림스테이킹..",
         "category" : "이벤트페이지",
-        "box" : "evnet",
+        "box" : "event",
         "image" : "03",
         "tag" : "#Photoshop #심플 #레드 #이벤트디자인 #혜택안내",
         "type" : "1",
@@ -33,7 +33,7 @@ data = [
     {
         "title" : "[메이톡] 컨퍼런스콜 공지",
         "category" : "명함디자인4",
-        "box" : "evnet",
+        "box" : "event",
         "image" : "04",
         "tag" : "#이벤트디자인 #Photoshop #그린 #컨퍼런스콜 #공지디자인",
         "type" : "0",
