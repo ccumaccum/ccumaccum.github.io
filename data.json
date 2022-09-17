@@ -3,7 +3,7 @@ data = [
     {
         "title" : "[blockchain] BIBLECOIN 회사 대표명함",
         "category" : "명함디자인",
-        "box" : "printout",
+        "box" : "명함",
         "image" : "01",
         "tag" : "#Photoshop #심플 #블루 #로고중심 #명함디자인",
         "type" : "1",
@@ -13,7 +13,7 @@ data = [
     {
         "title" : "[blockchain] BIBLECOIN IR 자료",
         "category" : "IR자료",
-        "box" : "reference",
+        "box" : "PPT",
         "image" : "02",
         "tag" : "#픽토그램 #블루 #IR디자인 #투자설명 #Photoshop",
         "type" : "2",
@@ -23,7 +23,7 @@ data = [
     {
         "title" : "[스트림코인] TNC그룹 스트림스테이킹..",
         "category" : "이벤트페이지",
-        "box" : "event",
+        "box" : "랜딩페이지",
         "image" : "03",
         "tag" : "#Photoshop #심플 #레드 #이벤트디자인 #혜택안내",
         "type" : "1",
@@ -32,8 +32,8 @@ data = [
     },
     {
         "title" : "[메이톡] 컨퍼런스콜 공지",
-        "category" : "명함디자인4",
-        "box" : "event",
+        "category" : "이벤트배너",
+        "box" : "배너",
         "image" : "04",
         "tag" : "#이벤트디자인 #Photoshop #그린 #컨퍼런스콜 #공지디자인",
         "type" : "0",
@@ -44,7 +44,7 @@ data = [
     {
         "title" : "[케이오스크] 언제 어디서나 쉽고편리..",
         "category" : "X-banner 디자인",
-        "box" : "printout",
+        "box" : "배너",
         "image" : "05",
         "tag" : "#Illustrator #인쇄물디자인 #QR코드 #픽토그램 #가상자산",
         "type" : "2",
@@ -53,7 +53,7 @@ data = [
     {
         "title" : "[애플비트] 이전에없던 가상자산 거래..",
         "category" : "X-banner 디자인",
-        "box" : "printout",
+        "box" : "배너",
         "image" : "02",
         "tag" : "#Illustrator #픽토그램 #블루 #거래플랫폼 #인쇄물디자인",
         "type" : "2",
@@ -62,7 +62,7 @@ data = [
     {
         "title" : "[스트림NFT] 구매방법&판매방법 가이..",
         "category" : "가이드 페이지",
-        "box" : "guide page",
+        "box" : "WEB",
         "image" : "03",
         "tag" : "#Photoshop #NFT #레드 #가이드디자인 #안내디자인",
         "type" : "1",
@@ -71,7 +71,7 @@ data = [
     {
         "title" : "[스트림NFT] 메타마스크가입 STRM..",
         "category" : "가이드 페이지",
-        "box" : "guide page",
+        "box" : "MOBILE",
         "image" : "04",
         "tag" : "#Photoshop #NFT #레드 #가이드디자인 #모바일디자인",
         "type" : "0",
@@ -81,7 +81,7 @@ data = [
     {
         "title" : "[LAC] Lady Ape Club 웹페이지디자..",
         "category" : "명함디자인1",
-        "box" : "homepage",
+        "box" : "WEB",
         "image" : "01",
         "tag" : "#XD #LAC #홈페이지디자인 #마이페이지",
         "type" : "1",
@@ -90,7 +90,7 @@ data = [
     {
         "title" : "[LAC] Lady Ape Club 홍보디자인",
         "category" : "대형현수막디자인",
-        "box" : "printout",
+        "box" : "배너",
         "image" : "02",
         "tag" : "#Illustrator #NFT #STRMNFT #인쇄물디자인",
         "type" : "2"
@@ -98,7 +98,7 @@ data = [
     {
         "title" : "바이블코인 회사 대표 명함 작업3",
         "category" : "모바일 이벤트페이지",
-        "box" : "mobile",
+        "box" : "MOBILE",
         "image" : "03",
         "tag" : "#심플 #레드 #로고중심 #명함디자인",
         "type" : "1"
@@ -166,7 +166,7 @@ data = [
     {
         "title" : "[TNC group] 마케팅 내역/결제",
         "category" : "인보이스",
-        "box" : "printout",
+        "box" : "서류",
         "image" : "03",
         "tag" : "#Illustrator #심플 #레드 #로고중심 #인쇄물디자인",
         "type" : "1"
@@ -174,7 +174,7 @@ data = [
     {
         "title" : "[K-osk] Virtual asset 코인안전거래..",
         "category" : "홍보디자인",
-        "box" : "AD",
+        "box" : "배너",
         "image" : "04",
         "tag" : "#K-osk #광고디자인 #픽토그램 #웹디자인",
         "type" : "0",
@@ -184,7 +184,7 @@ data = [
     {
         "title" : "[리얼리서치] 이벤트 럭키드로우 하러.. ",
         "category" : "링크배너디자인",
-        "box" : "AD",
+        "box" : "배너",
         "image" : "05",
         "tag" : "#이벤트디자인 #배너 #리얼리서치 #컬러풀",
         "type" : "2"
@@ -192,7 +192,7 @@ data = [
     {
         "title" : "[TCN ART] 메인 로고 디자인",
         "category" : "로고디자인",
-        "box" : "LOGO",
+        "box" : "로고",
         "image" : "02",
         "tag" : "#목업 #블루 #로고중심 #명함디자인",
         "type" : "2",
@@ -201,7 +201,7 @@ data = [
     {
         "title" : "[코인허브] 캐쉬존 코인 마이닝 자료..",
         "category" : "내용전달디자인",
-        "box" : "AD",
+        "box" : "배너",
         "image" : "03",
         "tag" : "#한/영 #흑백 #내용전달 #마이닝자료",
         "type" : "1"
@@ -209,7 +209,7 @@ data = [
     {
         "title" : "[메타팡] 게임 가이드 디자인",
         "category" : "가이드디자인",
-        "box" : "guide page",
+        "box" : "MOBILE",
         "image" : "04",
         "tag" : "#단순 #그린 #연우중심 #명함디자인",
         "type" : "0"
@@ -218,7 +218,7 @@ data = [
     {
         "title" : "[TNC group] 온라인마케팅 이름표",
         "category" : "이름표디자인",
-        "box" : "printout",
+        "box" : "명찰",
         "image" : "01",
         "tag" : "#Illustrator #심플 #로고중심 #인쇄물디자인",
         "type" : "1",
@@ -226,8 +226,8 @@ data = [
     },
     {
         "title" : "[리얼리서치] 럭키드로우 이벤트기간..",
-        "category" : "명함디자인2",
-        "box" : "AD",
+        "category" : "이벤트디자인",
+        "box" : "배너",
         "image" : "02",
         "tag" : "#이벤트기간 #알림 #메인배너 #웹페이지디자인",
         "type" : "2"
@@ -235,7 +235,7 @@ data = [
     {
         "title" : "[리얼리서치] 맞춤형 설문 의뢰하러가기",
         "category" : "이벤트디자인",
-        "box" : "AD",
+        "box" : "랜딩페이지",
         "image" : "03",
         "tag" : "#내용전달 #블루 #리서치 #포스팅디자인",
         "type" : "1"
@@ -243,7 +243,7 @@ data = [
     {
         "title" : "[리얼리서치] 맞춤형 설문 의뢰하러가기",
         "category" : "이벤트디자인",
-        "box" : "AD",
+        "box" : "랜딩페이지",
         "image" : "03",
         "tag" : "#모바일 #블루 #리서치 #포스팅디자인",
         "type" : "1"
