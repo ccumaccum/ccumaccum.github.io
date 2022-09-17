@@ -1,4 +1,4 @@
-function setData(selectedData) {
+function setData() {
 	let contentsBox = document.getElementById("content_card_box");
 
 	let totDiv = document.createElement('div');
@@ -81,18 +81,49 @@ function setData(selectedData) {
 	}
 }
 
-function searchData(selectedData) {
+function searchData() {
 	let contentDiv = document.getElementsByName("content_div");
-
 	for(let i=0; i<contentDiv.length; i++){
 		contentDiv[i].style.display = 'none';
 	}
-
+	
 	for(let i=0; i<contentDiv.length; i++){
 		contentDiv[i].getAttribute('data-id');
-		let search = contentDiv[i].getAttribute('data-id');
-		if(search.split(', ').includes(selectedData)){
-			contentDiv[i].style.display = 'block';
+
+		let dataSearch = mydata[i].search;
+		if(dataSearch == undefined) dataSearch='';
+		
+		let dataType = '';
+		try{
+			dataType = mydata[i].type;
+		}catch{
+			dataType = '0';
 		}
+		
+		if(BEST === false && NEW === false){
+			if(searchKeyword == ''){
+				contentDiv[i].style.display = 'block';
+			}else{
+				if(dataSearch.split(', ').includes(searchKeyword)){
+					contentDiv[i].style.display = 'block';
+				}
+			}
+			
+		}else if(BEST === true && NEW === false){
+			if(searchKeyword == ''){
+				if(dataType == '1')contentDiv[i].style.display = 'block';
+			}else {
+				if(dataSearch.split(', ').includes(searchKeyword) && dataType == '1'){
+					contentDiv[i].style.display = 'block';
+				}
+			}
+			console.log('BEST');
+		}else if(BEST === false && NEW === true){
+			if(dataSearch.split(', ').includes(searchKeyword) && dataType == '2'){
+				contentDiv[i].style.display = 'block';
+			}
+			console.log('NEW');
+		}
+		
 	}
 }

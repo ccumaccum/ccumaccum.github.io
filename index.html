@@ -17,6 +17,7 @@
 	<div class="modal" id="modal">
 		<a onclick="closeDetail();" style="cursor:pointer;"><div class="modal_background" id=""></div></a>
 		<table>
+			<th></th>
 			<tr>
 				<td>
 					<div class="modal_left">
@@ -146,23 +147,23 @@
 			<tr>
 				<td class="category_header">컬러 별</td>
 				<td class="category_contents" id="category_contents_tags">
-					<a onclick="getTag(this.innerHTML)" class="searchBtn">레드</a>
-					<a onclick="getTag(this.innerHTML)" class="searchBtn">블랙</a>
-					<a onclick="getTag(this.innerHTML)" class="searchBtn">블루</a>
-					<a onclick="getTag(this.innerHTML)" class="searchBtn">그린</a>
+					<a onclick="setCategory(this.innerHTML)" class="searchBtn">레드</a>
+					<a onclick="setCategory(this.innerHTML)" class="searchBtn">블랙</a>
+					<a onclick="setCategory(this.innerHTML)" class="searchBtn">블루</a>
+					<a onclick="setCategory(this.innerHTML)" class="searchBtn">그린</a>
 				</td>
 			</tr>
 			<tr>
 				<td class="category_header">디자인 별</td>
 				<td class="category_contents" id="category_contents_tags">
-					<a onclick="getTag(this.innerHTML)" class="searchBtn">PPTㆍIR</a>
-					<a onclick="getTag(this.innerHTML)" class="searchBtn">SNS포스팅</a>
-					<a onclick="getTag(this.innerHTML)" class="searchBtn">명함ㆍ인쇄ㆍ홍보물</a>
-					<a onclick="getTag(this.innerHTML)" class="searchBtn">웹ㆍ모바일디자인</a>
-					<a onclick="getTag(this.innerHTML)" class="searchBtn">NFT아트</a>
-					<a onclick="getTag(this.innerHTML)" class="searchBtn">패키지디자인</a>
-					<a onclick="getTag(this.innerHTML)" class="searchBtn">상세페이지ㆍ썸네일ㆍ써머리</a>
-					<a onclick="getTag(this.innerHTML)" class="searchBtn">이벤트페이지</a>
+					<a onclick="setCategory(this.innerHTML)" class="searchBtn">PPTㆍIR</a>
+					<a onclick="setCategory(this.innerHTML)" class="searchBtn">SNS포스팅</a>
+					<a onclick="setCategory(this.innerHTML)" class="searchBtn">명함ㆍ인쇄ㆍ홍보물</a>
+					<a onclick="setCategory(this.innerHTML)" class="searchBtn">웹ㆍ모바일디자인</a>
+					<a onclick="setCategory(this.innerHTML)" class="searchBtn">NFT아트</a>
+					<a onclick="setCategory(this.innerHTML)" class="searchBtn">패키지디자인</a>
+					<a onclick="setCategory(this.innerHTML)" class="searchBtn">상세페이지ㆍ썸네일ㆍ써머리</a>
+					<a onclick="setCategory(this.innerHTML)" class="searchBtn">이벤트페이지</a>
 				</td>
 			</tr>
 			<tr>
@@ -181,12 +182,18 @@
 			</tr>
 		</table>
 		<div class="inputArea">
-			<input type="checkbox" class="newBestInput" id="newBestNew" name="newBestNew"/>
-			<label for="newBestNew"><span class="newBestSpan">NEW</span></label>
+			<input onchange="setCheckBox(this.id);" type="radio" id="ALL" name="inputCheckBox" checked/>
+			<label for="ALL"><span class="newBestSpan">전체보기</span></label>
 		</div>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<div class="inputArea">
-			<input type="checkbox" id="newBestBest" name="newBestBest"/>
-			<label for="newBestBest"><span class="newBestSpan">BEST</span></label>
+			<input onchange="setCheckBox(this.id);" type="radio" id="BEST" name="inputCheckBox"/>
+			<label for="BEST"><span class="newBestSpan">BEST</span></label>
+		</div>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<div class="inputArea">
+			<input onchange="setCheckBox(this.id);" type="radio" class="newBestInput" id="NEW" name="inputCheckBox"/>
+			<label for="NEW"><span class="newBestSpan">NEW</span></label>
 		</div>
 	</div>
 	
