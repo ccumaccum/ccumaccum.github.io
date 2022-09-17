@@ -258,7 +258,7 @@ input[type='radio']{
 
 input[type=radio]:checked {
 	background: url(../images/check.png) no-repeat center center;
-	border: 2px solid #333;
+	border: 1px solid #999;
 	background-size: 17px 17px;
 }
   
