@@ -5,17 +5,39 @@ let mydata = JSON.parse(JSON.stringify(data));
 let modalIdx = 1;
 let modalNum = 1;
 
+let searchKeyword = '';
+let BEST = false;
+let NEW = false;
+
 function getData(data){
 	modalIdx = data;
 	getDetail();
 }
 
-function getTag(data){
-	searchData(data);
+function setCheckBox(val){
+
+	
+	if(val=='ALL'){
+		BEST = false;
+		NEW = false;
+	}
+	if(val=='BEST'){
+		BEST = true;
+		NEW = false;
+	}
+	if(val=='NEW'){
+		BEST = false;
+		NEW = true;
+	}
+	setSearchData();
+}
+function setCategory(val){
+	searchKeyword = val;
+	setSearchData();
 }
 
-function getTool(data){
-	searchData(data);
+function setSearchData(){
+	searchData();
 }
 
 
