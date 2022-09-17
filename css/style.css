@@ -172,9 +172,27 @@ footer p{width: 70%; text-align: center; color: #fff;}
 	margin:auto;
 }
 
+.category_viewAll{
+	float: right;
+	margin-bottom: 10px;
+}
+
+.category_viewAll_btn{
+	display:block;
+	font-size: 16px;
+	border:2px solid #999;
+	padding:3px 10px;
+	border-radius: 10px;
+}
+.category_viewAll_btn:hover{
+	border:2px solid #333;
+	background-color:#333;
+	color:#fff;
+}
+
 .category_title{
 	font-size:18px;
-	margin:30px 0;
+	margin:30px 0 0 0;
 }
 
 .category_title span{
@@ -196,12 +214,13 @@ footer p{width: 70%; text-align: center; color: #fff;}
 	background-color:#fafafc;
 	font-weight: bold;
 
-	border-right:1px solid #333;
+	border-right:1px solid #999;
 }
 
 .category_contents{
 	text-align: left;
 	word-break:keep-all;
+	font-weight: 400;
 }
 
 .category_contents a{
