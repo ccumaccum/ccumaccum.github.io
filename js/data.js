@@ -15,8 +15,6 @@ function getData(data){
 }
 
 function setCheckBox(val){
-
-	
 	if(val=='ALL'){
 		BEST = false;
 		NEW = false;
@@ -29,6 +27,10 @@ function setCheckBox(val){
 		BEST = false;
 		NEW = true;
 	}
+	setSearchData();
+}
+function viewAll(){
+	searchKeyword = '';
 	setSearchData();
 }
 function setCategory(val){
