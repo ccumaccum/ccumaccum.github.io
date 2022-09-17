@@ -49,10 +49,10 @@ function setData(selectedData) {
 		tag.setAttribute('class' , 'content_tag');
 		tag.innerHTML = mydata[data].tag;
 	
-		let detail = document.createElement('input');
-		detail.setAttribute('type' , 'hidden');
-		detail.setAttribute('id' , 'detail_'+(Number(data)+1));
-		detail.setAttribute('value' , mydata[data].detail);
+		//let detail = document.createElement('input');
+		//detail.setAttribute('type' , 'hidden');
+		//detail.setAttribute('id' , 'detail_'+(Number(data)+1));
+		//detail.setAttribute('value' , mydata[data].detail);
 	
 		let tagStr = mydata[data].tag;
 		let tagArr = tagStr.split(" ");
@@ -74,7 +74,7 @@ function setData(selectedData) {
 		div.appendChild(category);
 		div.appendChild(title);
 		div.appendChild(tag);
-		div.appendChild(detail);
+		//div.appendChild(detail);
 	
 		totDiv.appendChild(div);
 		contentsBox.appendChild(totDiv);

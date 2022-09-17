@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+*{
+	font-family: Pretendard;
+}
+a:hover{
+	cursor:pointer;
+}
 /* modal */
 .modal{
 	position:fixed;
@@ -84,7 +91,7 @@
 }
 
  /* common ---------------------------------------------------------------------------------------- */
-*{padding:0; margin:0; box-sizing: border-box; color:#333333; font-family: "맑은 고딕",sans-serif;}
+*{padding:0; margin:0; box-sizing: border-box; color:#333333;}
 li{list-style: none;}
 a{text-decoration: none; color:inherit;}
 img{vertical-align: top;}
