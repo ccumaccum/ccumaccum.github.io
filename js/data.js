@@ -22,7 +22,7 @@ function getTool(data){
 function getDetail(){
 	modalNum = 1;
 	setImg();
-	setSpan();
+	//setSpan();
 	let modal = document.getElementById('modal');
 	modal.classList.add('active');
 }
@@ -43,11 +43,11 @@ function setImg(){
 	img.setAttribute('src' , loc);
 }
 
-function setSpan(){
-	let setSpan = document.getElementById('modal_detail_span');
-	let val = document.getElementById('detail_'+modalIdx).value;
-	setSpan.innerHTML = val;
-}
+//function setSpan(){
+//	let setSpan = document.getElementById('modal_detail_span');
+//	let val = document.getElementById('detail_'+modalIdx).value;
+//	setSpan.innerHTML = val;
+//}
 
 function closeDetail(){
 	let modal = document.getElementById('modal');

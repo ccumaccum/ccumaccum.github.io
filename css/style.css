@@ -165,7 +165,6 @@ footer p{width: 70%; text-align: center; color: #fff;}
 }
 .YW_career .category_contents{
 	color: #7f7f7f;
-	
 }
 /* category_box */
 .category_box{
@@ -227,6 +226,19 @@ footer p{width: 70%; text-align: center; color: #fff;}
 .category_contents .category_contents_hashtag:hover{
 	cursor:pointer;
 	color:#333;
+}
+input[type='checkbox']{
+	width:22px;
+	height:22px;
+}
+.inputArea{
+	display:inline;
+}
+
+.newBestSpan{
+	font-size:22px;
+	position:relative;
+	top:-3px;
 }
 
 /* content_card */
