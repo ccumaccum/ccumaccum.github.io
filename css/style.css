@@ -96,7 +96,6 @@ li{list-style: none;}
 a{text-decoration: none; color:inherit;}
 img{vertical-align: top;}
 
-
   /* header ---------------------------------------------------------------------------------------- */
  header{width: 100%; height: 100px; background: #fff}
  .inner{display: flex; align-items: center; width: 1200px; height: 100px; margin: 0 auto;}
@@ -176,6 +175,7 @@ footer p{width: 70%; text-align: center; color: #fff;}
 	border-collapse: collapse;
 	border:1px solid #333;
 	margin-bottom:60px;
+	font-size:21px;
 }
 
 .category_header{
