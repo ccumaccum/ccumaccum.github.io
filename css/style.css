@@ -159,10 +159,10 @@ footer p{width: 70%; text-align: center; color: #fff;}
 
 /* YW_career */
 .YW_career{
-	border-top:1px solid #999;
+	border-top:1px solid #aaa;
 }
 .YW_career .category_header{
-	padding:15px;
+	padding:30px;
 }
 .YW_career .category_contents{
 	color: #7f7f7f;
@@ -176,7 +176,7 @@ footer p{width: 70%; text-align: center; color: #fff;}
 .category_viewAll{
 	float: right;
 	position: relative;
-    top: -5px;
+    top: -6px;
 }
 
 .category_viewAll_btn{
@@ -194,8 +194,8 @@ footer p{width: 70%; text-align: center; color: #fff;}
 }
 
 .category_title{
-	padding: 60px 0px 35px 0;
-	font-size:18px;
+	padding: 60px 0px 25px 0;
+	font-size:15px;
 }
 
 .category_title span{
@@ -208,7 +208,7 @@ footer p{width: 70%; text-align: center; color: #fff;}
 .category_table{
 	width: 100%;
 	border-collapse: collapse;
-	border:1px solid #999;
+	border:1px solid #aaa;
 	margin-bottom:60px;
 	font-size:18px;
 }
@@ -220,7 +220,7 @@ footer p{width: 70%; text-align: center; color: #fff;}
 	background-color:#fafafc;
 	font-weight: 600;
 
-	border-right:1px solid #999;
+	border-right:1px solid #aaa;
 }
 
 .category_contents{
