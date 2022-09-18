@@ -9,10 +9,6 @@ let searchKeyword = '';
 let BEST = false;
 let NEW = false;
 
-function getBannerImg(data){
-	getDetail();
-}
-
 function getData(data){
 	modalIdx = data;
 	getDetail();

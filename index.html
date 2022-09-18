@@ -15,25 +15,27 @@
 </head>
 <body>
 	<div class="modal" id="modal">
-		<a onclick="closeDetail();" style="cursor:pointer;"><div class="modal_background" id=""></div></a>
+		<a onclick="closeDetail();"><div class="modal_background" id=""></div></a>
 		<table>
 			<th></th>
 			<tr>
-				<td>
-					<div class="modal_left">
-						<a class="modal_left_area" onclick="modalImgChange(-1);" style="cursor:pointer;"></a>
-						<img src="images/before.png" alt="no"/>
-					</div>
-				</td>
 				<td>
 					<div class="modal_contents">
 						<img id="modal_img" src="images/product/images/1/1.jpg" title="클릭하시면 크게 보입니다" style="cursor:pointer;" alt="no" onerror="onErrorImage()" onclick='getImgPop();'/>
 					</div>
 				</td>
 				<td>
+					<div class="modal_left">
+						<a class="modal_arrow_area" onclick="modalImgChange(-1);">
+							<img class="modal_left_arrow" src="images/before.png" alt="no"/>
+						</a>
+					</div>
+				</td>
+				<td>
 					<div class="modal_right">
-						<a class="modal_right_area" onclick="modalImgChange(1);" style="cursor:pointer;"></a>
-						<img src="images/next.png" alt="no"/>
+						<a class="modal_arrow_area" onclick="modalImgChange(1);">
+							<img class="modal_right_arrow" src="images/next.png" alt="no"/>
+						</a>
 					</div>
 				</td>
 			</tr>
