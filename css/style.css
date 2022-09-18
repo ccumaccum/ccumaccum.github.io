@@ -31,7 +31,7 @@ a:hover{
 .modal_left{
 	position:fixed;
 	top:50%;
-	left:15%;
+	left:11%;
 	transform: scale(0.7);
 }
 .modal_right{
@@ -46,10 +46,10 @@ a:hover{
     height: 85px;
 }
 .modal_left_arrow{
-	
+	transform: translate(0%, -50%);
 }
 .modal_right_arrow{
-	
+	transform: translate(0%, -50%);
 }
 .modal_arrow_area:hover{
 	transform:scale(1.1);
@@ -59,18 +59,14 @@ a:hover{
 	top:50%;
 	left:50%;
 	transform: translate(-50%, -50%);
-	width:auto;
+	width:68%;
 	height:70%;
-}
-.modal_contents img{
-	/*position:absolute;
-	top:50%;
-	left:50%;
-	transform: translate(-50%, -50%);*/
-	/*width:100%;*/
 	text-align:center;
+}
+.modal_img{
 	height:100%;
-	overflow: auto;
+	width:100%;
+	object-fit: contain;
 }
 
 .modal_detail{
@@ -186,8 +182,8 @@ footer p{width: 70%; text-align: center; color: #fff;}
 
 }
 .category_viewAll_btn:hover{
-	border:1px solid #333;
-	background-color:#333;
+	border:1px solid #263a83;
+	background-color:#263a83;
 	color:#fff;
 }
 
@@ -238,7 +234,7 @@ footer p{width: 70%; text-align: center; color: #fff;}
 }
 
 .category_contents a:hover{
-	color:#000;
+	color:#263a83;
 }
 
 .searchBtn{
@@ -266,7 +262,7 @@ input[type='radio']{
 input[type=radio]:checked {
 	background: url(../images/check.png) no-repeat center center;
 	border: 1px solid #999;
-	background-size: 17px 17px;
+	background-size: 14px 14px;
 }
   
 input[type=radio]:focus {
@@ -280,6 +276,7 @@ input[type=radio]:focus {
 	font-size:17px;
 	position:relative;
 	top:-3px;
+	color:#263a83;
 }
 
 /* content_card */
