@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* illuwa tablet용 */
+
+/*x태블릿용 미디어쿼리  - 해상도가 1024px 이하일 때*/
+@media screen and (max-width:1024px){
+	header {
+		height:auto;
+		background-color:#fff;
+	}
+	#h_area {
+		width:100%;
+		height:200px;
+	}
+	#logo {
+		width:45%;
+		height:100px;
+		padding-left:5%;
+		background-color:#0f2c4c;
+		float:left;
+	}
+	#logo img {
+		height:70px;
+		margin:15px 0;
+	}
+	#menu_btn {
+		display:block;
+		width:45%;
+		height:100px;
+		float:right;
+		padding-right:5%;
+		background-color:#0f2c4c;
+	}
+	#menu_btn img {
+		float:right;
+		height:20px;
+		margin-top:40px;
+	}
+	#search {
+		width:100%;
+		height:100px;
+	}
+	#search form {
+		width:60%;
+		border:2px solid #0f2c4c;
+		margin:0 auto;
+		margin-top:50px;
+	}
+	#search form input {
+		width:85%;
+	}
+	#search form button {
+		width:15%;
+		background-image:url(../img/dod_03.png);
+	}
+	#nav_area {
+		height:150px;
+		padding-bottom:10px;
+		/*네비영역을 안보이게 처리하고 메뉴버튼을 클릭하면 보이게*/
+		display:none;
+	}
+	nav {
+		width:100%;
+		height:150px;
+		flex-flow:row wrap;
+		justify-content:center;
+	}
+	#user {
+		order:1;
+		width:100%;
+		height:46px;
+		margin-top:26px;
+		/*자식객체 가운데 정렬*/
+		display:flex;
+		justify-content:center;
+	}
+	#user li {
+		height:46px;
+		line-height:46px;
+		font-size:20px;
+		color:#0f2c4c;
+	}
+	#user li a {
+		color:#0f2c4c;
+	}
+	#menu {
+		order:2;
+		width:100%;
+		height:46px;
+		display:flex;
+		justify-content:center;
+	}
+	#menu li {
+		font-size:18px;
+		height:46px;
+		line-height:46px;
+		padding-right:0;
+		padding:0 10px;
+	}
+	#main_visual {
+		margin-top:40px;
+		width:100%;
+		height:520px;
+		background-image:url(../img/tablet_v_02.jpg);
+		background-size:100%;
+	}
+	#hot_area {
+		width:80%;
+		margin-top:55px;
+	}
+	#hot_area h4, #free_area h4 {
+		font-size:30px;
+	}
+	#hot_area ul li:last-child,
+	#free_area ul li:last-child {
+		display:none;
+	}
+	
+	footer {
+		margin-top:80px;
+		padding:30px 0 50px 0;
+	}
+	#free_area {
+		width:80%;
+		margin-top:55px;
+	}
+	.title, .title {
+		font-size:16px;
+		line-height:26px;
+	}
+	.text, .f_text {
+		font-size:13px;
+	}
+	#f_area {
+		width:80%;
+		flex-flow:row wrap;
+	}
+	#f_logo {
+		width:100%;
+	}
+	#f_logo img {
+		height:70px;
+	}
+	#f_info {
+		width:100%;
+		font-size:12px;
+		line-height:16px;
+		padding-top:20px;
+	}
+	#hot_area ul li,#free_area ul li {
+		width:31%;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+

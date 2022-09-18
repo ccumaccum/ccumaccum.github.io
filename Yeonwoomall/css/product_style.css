@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* product_style */
+
+#product_area {
+	width:100%;
+	height:800px;
+	border-top:1px solid #ccc;
+}
+#product {
+	width:960px;
+	height:600px;
+	/*background-color:#999;*/
+	margin:100px auto;
+	border-top:4px solid #666;
+	border-bottom:1px solid #666;
+}
+#tab_menu {
+	width:440px;
+	height:600px;
+	/*background-color:#F66;*/
+	float:left;
+	/*탭내용 가출 방지*/
+	position:relative;
+}
+/*탭내용*/
+.tab_content {
+	/*큰이미지의 크기(5개)*/
+	width:438px;
+	height:428px;
+	border:1px solid #ccc;
+	position:absolute;
+	top:30px;
+	left:0;
+	/*background-color:#f00;*/
+	display:none;
+}
+
+#tab_menu ul li:first-child .tab_content {
+	display:block;
+}
+
+
+#tab_menu ul {
+	/*background-color:#6CC;*/
+}
+#tab_menu ul li {
+	width:78px;
+	height:78px;
+	float:left;
+	border:1px solid #ccc;
+	/*background-color:#fcf;*/
+	margin-top:490px;
+	margin-right:10px;
+}
+#tab_menu ul li:last-child {
+	margin-right:0;
+}
+#tab_menu ul li label {
+	/*작은 이미지의 크기입니다.(5)*/
+	width:78px;
+	height:88px;
+	display:block;
+	/*width:78px;
+	height:88px;
+	border:1px solid #ccc;*/
+}
+
+#tab_menu ul li input {
+	display:none;
+}
+
+#tab_menu ul li input[type=radio]:checked ~ .tab_content {
+	display:block;
+}
+
+
+
+
+
+
+/*상품옵션영역*/
+#p_option {
+	width:400px;
+	height:600px;
+	/*background-color:#F90;*/
+	float:left;
+	margin-left:120px;
+}
+#p_option p {
+	font-size:20px;
+	line-height:20px;
+	padding:30px 0;
+}
+
+#p_option p span {
+	font-size:8px;
+	color:#666;
+}
+#p_option table {
+	border-collapse:collapse;
+}
+
+#p_option table tr td{
+	/*border:1px solid #ccc;*/
+	height:30px;
+	font-size:12px;
+	color:#666;
+}
+/*테이블의 첫번째열만 가로크기 지정*/
+#p_option table tr td:first-child {
+	width:100px;
+}
+/*테이블의 두번째열만 가로크기 지정*/
+#p_option table tr td:last-child {
+	width:260px;
+}
+#cal, #coupon {
+	border:1px solid #000;
+	font-size:10px;
+	color:#000;
+	background-color:transparent;
+	padding:2px 15px 4px 15px;
+	margin-left:10px;
+}
+#p_option hr {
+	border:2px solid #ccc;
+	margin:20px 0 10px 0;
+}
+#color_name, #order {
+	width:200px;
+	height:26px;
+	font-size:11px;
+}
+.cart {
+	width:400px;
+	height:40px;
+	background-color:#000;
+	
+	text-align:center;
+	line-height:40px;
+	font-size:18px;
+	margin-top:30px;
+}
+.cart a {
+	color:#fff;
+}
+.btn_area {
+	margin-top:5px;
+	width:400px;
+	/*자식객체를 부모영역안에서 양끝 정렬해주는 기능*/
+	display:flex;
+	justify-content:space-between;
+}
+.btn_area a {
+	/*크기 적용이 안되서 디스플레이 블럭으로 바꿔줌*/
+	display:block;
+	width:126px;
+	height:26px;
+	border:1px solid #000;
+	/*float:left;*/
+	text-align:center;
+	line-height:26px;
+	font-size:14px;
+}
+.p_sns li{
+	width:24px;
+	height:24px;
+	border:1px solid #ccc;
+	text-align:center;
+	line-height:24px;
+	float:left;
+	margin-right:6px;
+	margin-top:20px;
+	border-radius:100%;
+	font-size:12px;
+	background-color:#000;
+	
+}
+.p_sns li a{
+	color:#FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

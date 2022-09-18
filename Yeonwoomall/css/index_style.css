@@ -1,0 +1,704 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+/*보디태그에 폰트패밀리를 사용하면 문서전체에 이 폰트가 적용된다.*/
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*모든태그는 기본적인 여백을 가지고있다.
+이를 없애주는 명령어
+*(전체선택자), margin(상하좌우 바깥쪽여백),padding(상하좌우 안쪽여백)*/
+* {margin:0; padding:0;}
+li {list-style:none;}
+a {text-decoration:none; color:#000;}
+/*아이디선택자(#아이디이름) 아이디가 wrap인 객체를 선택해서 스타일 적용*/
+#wrap {
+	width:100%;
+	/*height:4673px;
+	background-color:#ccc;*/
+}
+header {
+	width:100%;
+	height:166px;
+	/*background-color:#0CC;*/
+	
+}
+/*태그선택자, 하위선택자, 아이디선택자*/
+header #top_area {
+	width:100%;
+	height:38px;
+	background-color:#000;
+}
+/*태그선택자, 하위선택자, 아이디선택자*/
+header #logo_area {
+	width:1290px;
+	height:128px;
+	/*background-color:#FC9;*/
+	/*바깥쪽여백을0으로 하면서 브라우저 가로 가운데 자동정렬시킴*/
+	margin:0 auto;
+}
+
+/*header #top_area*/ 
+#top {
+	width:1290px;
+	height:38px;
+	margin:0 auto;
+	/*background-color:#6CF;*/
+}
+#top p {
+	width:300px;
+	height:38px;
+	/*background-color:#00F;*/
+	font-size:11px;
+	/*line-height(행간) 을 p태그의 높이값과 같은 값을 주면 세로 가운데 정렬됨*/
+	line-height:38px;
+	float:left;
+	margin-left:20px;
+	color:#FFF;}
+	
+	#top p a {
+		color:#FFF;}
+
+#top ul {
+	width:600px;
+	height:38px;
+	/*background-color:#6C6;*/
+	font-size:11px;
+	/*line-height(행간) 을 p태그의 높이값과 같은 값을 주면 세로 가운데 정렬됨*/
+	line-height:38px;
+	/*p태그에 float:left;를 꼭 줘야 float:right가 제대로 적용됨*/
+	float:right;}
+	
+#top ul li {
+	float:right;
+	/*li 태그 기본 땡땡이 없애기*/
+	list-style:none;
+	
+	font-size:11px;
+	line-height:38px;
+	/*글자컬러는 a태그에서 사용해야 적용됨
+	color:#000:*/
+	
+	}
+	
+	#top ul li a {
+		color:#fff;
+		text-decoration:none;
+		padding-left:20px;
+		padding-right:20px;
+		border-left:1px solid #fff;}
+
+	#top ul li:nth-child(4) a {
+		border:none;
+		
+	}
+	#top ul li:nth-child(1) a {
+		padding-right:none;
+		
+	}
+
+/*로고영역*/
+#logo_area nav {
+	width:370px;
+	height:128px;
+	/*background-color:#ccc;*/
+	float:left;
+	}
+	
+	#logo_area nav ul li {
+		float:left;
+		text-size:14px;
+		margin-right:30px;
+		height:128px;
+		line-height:128px;
+	}
+	/*메뉴에 마우스 올렸을때(:hover)가상선택자) 글자색상 변경*/
+	#logo_area nav ul li a:hover {
+		color:#f79898;
+		border-bottom:1px solid #f79898;
+	}
+	
+	
+	
+
+#logo_area #logo {
+	width:550px;
+	height:128px;
+	/*background-color:#09F;*/
+	float:left;
+	text-align:center;
+	}
+	
+	#logo a img {
+		margin-top:46.5px;
+	}
+
+#logo_area #sns {
+	width:280px;
+	height:128px;
+	/*background-color:#C9C;*/
+	float:left;
+	}
+	
+	#sns ul {
+		margin-left:50px;
+		width:177px;
+		height:34px;
+		/*background-color:#39C;*/
+		float:right;
+		margin-top:48px;
+		margin-right:10px;
+		}
+	
+	#sns ul li {
+		float:left;
+		width:34px;
+		height:34px;
+		margin-left:10px;
+		
+	}
+	
+	
+
+#logo_area #money {
+	width:90px;
+	height:128px;
+	/*background-color:#3C9;*/
+	float:left;
+	}
+
+
+#money p {
+	width:90px;
+	height:35px;
+	background-color:#000;
+	color:#FFF;
+	font-size:12px;
+	line-height:35px;
+	text-indent:5px;
+	margin-top:46.5px;
+	
+}
+#money p span {
+	float:right;
+	margin-right:20px;
+}
+
+/*본문영역*/
+#section {
+	width:100%;
+}
+#visual {
+	width:1290px;
+	height:692px;
+	/*부모영역안에서 위치 잡기 위해서*/
+	position:relative;
+	/*비쥬얼의 영역을 벗어나는 객체는 안보이게 처리*/
+	overflow:hidden;
+	/*background-color:#f00;*/
+	margin:0 auto;
+}
+
+/*비쥬얼의 자식인 ul에게만 스타일을 주기위해서 꼭 자식선택자(>) 사용해야함*/
+#visual > ul {
+	position:absolute;
+	left:-100%;
+	height:692px;
+	width:500%;/*(li의갯수+2)*li의 넓이*/
+}
+#visual > ul > li {
+	float:left;
+	width:20%;
+	height:692px;
+}
+#visual > ul > li > a > img {
+	width:100%;
+	height:692px;
+}
+
+/*동그라미버튼*/
+#btn {
+	width:90px;
+	height:30px;
+	/*background-color:#f00;*/
+	/*메인이미지와 영역 겹치기*/
+	/*포지션으로 가로 센터잡기*/
+	position:absolute;
+	left:50%;
+	margin-left:-45px;
+	bottom:0;
+}
+#btn ul li {
+	width:10px;
+	height:10px;
+	float:left;
+	background-color:rgba(102,102,102,0.5);
+	margin:10px;
+	/*사각형을 동그라미로*/
+	border-radius:100%;
+	/*들여쓰기해서 숫자123안보이게*/
+	text-indent:-9999px;
+	/*마우스를 손가락 모양으로*/
+	cursor:pointer;
+}
+/*동그라미 버튼에 마우스를 올리거나, active클래스를 가지고 있을때 
+투명도를 1로 변경*/
+#btn ul li:hover, #btn ul li.active {
+	background-color:rgba(102,102,102,1);
+}
+
+/*좌우버튼*/
+.left_btn {
+	/*이미지영역과 객체 겹치기*/
+	/*포지션으로 세로 센터잡기*/
+	/*버튼높이의 반을 마진탑으로 -값을 주면됨*/
+	position:absolute;
+	top:50%;
+	margin-top:-15px;
+	width:24px;
+	height:30px;
+	left:20px;
+}
+.right_btn {
+	/*이미지영역과 객체 겹치기*/
+	/*포지션으로 세로 센터잡기*/
+	/*버튼높이의 반을 마진탑으로 -값을 주면됨*/
+	position:absolute;
+	top:50%;
+	margin-top:-15px;
+	width:24px;
+	height:30px;
+	right:20px;
+}
+
+/*support영역*/
+#support {
+	width:1290px;
+	height:100px;
+	/*background-color:#990;*/
+	margin:66px auto;
+}
+.s_box {
+	width:400px;
+	height:100px;
+	/*background-color:#0CF;*/
+	float:left;
+}
+#s_box_02 {
+	width:460px;
+	height:100px;
+	/*background-color:#999;*/
+	margin-left:15px;
+	margin-right:15px;
+}
+
+/*feature영역*/
+#feature {
+	width:1290px;
+	height:949px;
+	/*background-color:#ccc;*/
+	margin:0 auto;
+}
+
+#feature h1 {
+	width:1290px;
+	height:130px;
+	/*background-color:#FC6;*/
+	text-align:center;
+	font-size:30px;
+	line-height:130px;
+}
+
+#f_box_area {
+	width:1290px;
+	height:819px;
+	/*background-color:#FC6;*/
+}
+.f_box {
+	width:400px;
+	height:820px;
+	/*background-color:#99C;*/
+	float:left;
+}
+
+#f_box_02 {
+	width:460px;
+	height:820px;
+	/*background-color:#0CF;*/
+	float:left;
+	margin-left:15px;
+	margin-right:15px;
+}
+.small {
+	width:360px;
+	height:360px;
+	padding:20px;
+	/*background-color:#6C9;*/
+}
+/*그룹선택자(요소1, 요소2, .......)*/
+#s_01, #s_03 {
+	margin-bottom:20px;
+}
+	
+#s_01 {
+	background-image:url(../img/support_04_1.jpg)
+}
+
+#s_02 {
+	background-image:url(../img/support_05_1.jpg)
+}
+
+#s_03 {
+	background-image:url(../img/support_07_1.jpg)
+}
+
+#s_04 {
+	background-image:url(../img/support_08_1.jpg)
+}
+
+#f_box_02 {
+	background-image:url(../img/support_06_1.jpg)
+}
+	
+.border {
+	/*테두리의 크기만큼(상하좌우 4px) 가로세로 크기를 줄여준다*/
+	width:356px;
+	height:356px;
+	
+	/*background-color:rgba(255,255,255,0.5);*/
+	border:2px solid #fff;
+	/*인라인요소를 블럭요소로 바꿔서 가로 세로 크기가 적용되게 해준다.*/
+	display:block;
+	
+	text-align:center;
+	line-height:356px;
+	font-size:24px;
+	/*글자컬러(red,green,blue,투명도0~1), 현재 투명도 0이라 글자가 안보인다*/
+	color:rgba(255,255,255,0);
+	}
+/*small 박스에 마우스를 올리면 그의 자식인 a태그(.border)의 배경칼라 변경*/	
+.small:hover .border {
+	background-color:rgba(0,0,0,0.4);
+	/*테두리없애기*/
+	border:none;
+	color:rgba(255,255,255,1);
+}
+.border_02 {
+	width:416px;
+	height:776px;
+	border:2px solid #fff;
+	margin:20px;
+	text-align:center;
+	line-height:776px;
+	color:rgba(255,255,255,0);
+	}
+	
+#f_box_02:hover .border_02 {
+	background-color:rgba(0,0,0,0.4);
+	color:rgba(255,255,255,1);
+	border:none;
+	
+}
+/*컬랙션 영역*/
+#collection{
+	width:1290px;
+	height:834px;
+	/*background-color:#6CC;*/
+	margin:100px auto;
+}
+	
+/*하위선택자(상위요소 하위요소), 띄어쓰기로 구분*/
+#collection h1 {
+	font-size:30px;
+	text-align:center;
+	width:1290px;
+	height:90px;
+	/*background-color:#999;*/
+	
+}
+#c_area {
+	width:1254px;
+	height:708px;
+	/*background-color:#6C9;*/
+	padding:18px;
+	border:1px solid #666;
+}
+.c_box {
+	width:300px;
+	height:345px;
+	background-color:#CCC;
+	float:left;
+	margin-right:18px;
+	margin-bottom:18px;
+	background-position:top center;
+}
+.c_box a{
+	width:300px;
+	height:345px;
+	display:block;
+}
+.c_box:nth-child(4),.c_box:nth-child(8) {
+	margin-right:0px;
+}
+.c_box:nth-child(1) a{
+	background-image:url(../img/c_01_1.jpg);
+}
+	
+.c_box:nth-child(2) a{
+	background-image:url(../img/c_02_1.jpg);
+}
+.c_box:nth-child(3) a{
+	background-image:url(../img/c_03_1.jpg);
+}
+.c_box:nth-child(4) a{
+	background-image:url(../img/c_04_1.jpg);
+}
+.c_box:nth-child(5) a{
+	background-image:url(../img/c_05_1.jpg);
+}
+.c_box:nth-child(6) a{
+	background-image:url(../img/c_06_1.jpg);
+}
+.c_box:nth-child(7) a{
+	background-image:url(../img/c_07_1.jpg);
+}
+.c_box:nth-child(8) a{
+	background-image:url(../img/c_08_1.jpg);
+}
+
+.c_box a:hover {
+	/*백그라운드 이미지의 위치가 위아래(바닥정렬),좌우(센터정렬)*/
+	background-position:bottom center;
+}
+	
+	
+#brand {
+	width:1290px;
+	height:300px;
+	/*background-color:#999;*/
+	/*바깥쪽 여백을 상하좌우로 100px씩 주면서 브라우저 가로 가운데 자동 정렬*/
+	margin:100px auto;
+}
+	
+#brand h1 {
+	height:60px;
+	text-align:center;
+	font-size:30px;
+}
+	
+#b_area {
+	width:1290px;
+	height:240px;
+	/*background-color:#3C6;*/
+	text-align:center;
+}
+#b_area a img {
+	padding-top:0px;
+	}
+/*b_Area의 자식인 a태그의 형제 중 둘재만 선택하여 스타일적용*/
+#b_area a:nth-child(2) {
+
+}
+#b_area a:nth-child(3) {
+
+}
+#b_area a:nth-child(4) {
+
+}
+#b_area a:nth-child(5) {
+
+}
+#b_area a:nth-child(1) {
+
+}
+	
+/*커스터머 세이 영역*/
+#customer {
+	width:100%;
+	height:500px;
+	/*background-color:#ccc:*/
+}
+	
+
+#customer h1 {
+	width:100%;
+	height:100px;
+	font-size:30px;
+	text-align:center;
+}
+#cus_area {
+	width:100%;
+	height:400px;
+	background-color:#e0e0e0;
+	padding:40px;
+}
+
+#cus_box {
+	width:1290px;
+	height:400px;
+	/*background-color:#FC3;*/
+	margin:0 auto;
+}
+
+.designer, .text {
+	float:left;
+	
+}
+.designer {
+	width:270px;
+	height:400px;
+	/*background-color:#F66;*/
+	margin-left:20px;
+}
+.text {
+	width:355px;
+	height:400px;
+	/*background-color:#FC0;*/	
+}
+.text p {
+	font-size:14px;
+	color:#000;
+	padding-top:130px;
+	padding-bottom:20px;
+}
+#text_01 {
+	text-align:right;
+}
+.text h3 {
+	font-size:30px;
+}
+
+.text h3 span {
+	font-size:14px;
+	padding-top:20px;
+}
+footer {
+	width:100%;
+	height:700px;
+	background-color:#000;
+	}
+#footer_area {
+	width:1290px;
+	height:700px;
+	margin:0 auto;
+	/*background-color:#999;*/
+}
+#footer_top {
+	width:1290px;
+	height:450px;
+	/*background-color:#F96;*/
+}
+
+
+
+#f_menu{
+	width:640px;
+	height:450px;
+	/*background-color:#699;*/
+	float:left;
+	margin-right:285px;
+}
+#f_sns {
+	width:360px;
+	height:450px;
+	/*background-color:#666;*/
+	float:left;
+}
+/*2차원메뉴*/
+/*자식선택자(>) 자식객체를 선택해서 스타일 적용하는 선택자
+#f_menu의 자식인 ul, ul의 자식인 li만을 선택해서 스타일적용*/
+#f_menu > ul {
+	margin-top:60px;
+}
+
+#f_menu > ul > li {
+	float:left;
+	font-size:16px;
+	color:#FFF;
+	margin-left:75px;
+}
+/*서브메뉴의 스타일*/
+.sub li {
+	font-size:12px;
+	/*안쪽여백을 위아래(10px), 좌우(0px)*/
+	padding:8px 0;
+	
+}
+
+.sub {
+	margin-top:30px;
+}
+	
+
+
+#f_sns h3 {
+	font-size:16px;
+	margin-top:60px;
+	color:#fff;
+	margin-bottom:60px;
+}
+#f_sns ul {
+	height:50px;
+	margin-bottom:60px;
+}
+
+#f_sns ul li {
+	float:left;
+	margin-right:10px;
+}
+#email_area {
+	width:358px;
+	height:40px;
+	border:1px solid #666;
+}
+#email_area input {
+	width:270px;
+	height:40px;
+	/*인풋태그는 기본적으로 테두리와 흰색 배경칼라를 가지고 있다*/
+	border:none;
+	/*배경색 투명하게*/
+	background-color:transparent;
+	/*들여쓰기*/
+	text-indent:15px;
+}
+#email_area button {
+	width:80px;
+	height:30px;
+	border:none;
+	background-color:#fff;
+	color:#000;
+	font-size:12px;
+}
+#footer_bottom {
+	width:1290px;
+	height:250px;
+	/*background-color:#6CC;*/
+	border-top:1px solid #000;
+}
+
+#footer_bottom p {
+	color:#fff;
+	font-size:9px;
+	/*글씨얇게*/
+	font-weight:100;
+	/*행간*/
+	line-height:20px;
+	padding-top:50px;
+	/*글자간격*/
+	letter-spacing:2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

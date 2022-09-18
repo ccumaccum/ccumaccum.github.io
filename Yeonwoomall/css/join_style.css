@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* 회원가입 폼 스타일 */
+
+#join_area {
+	width:100%;
+	border-top:1px solid #ccc;
+	padding-top:100px;
+	padding-bottom:100px;
+	
+}
+#join {
+	width:960px;
+	margin:0 auto;
+	/*background-color:#ff0;*/
+}
+#join h1 {
+	font-size:36px;
+	color:@666;
+	text-align:center;
+}
+#join p {
+	font-size:14px;
+	color:#999;
+	padding-bottom:50px;
+	border-bottom:4px solid #ccc;
+	text-align:center;
+}
+#join form {
+	font-size:14px;
+}
+#join form h4 {
+	font-size:18px;
+	color:#666;
+	padding:40px 0 0 0;
+}
+.join_box {
+	width:920px;
+	height:200px;
+	background-color:#f9f9f9;
+	/*overflow:scroll - 넘치는 부분은 스크롤로 처리 , x,y축에 스크롤바가 다 생김;*/
+	/*overflow:scroll;*/
+	overflow-x:hidden;
+	overflow-y:auto;
+	color:#666;
+	font-size:12px;
+	padding:20px;
+	margin:10px; 0;
+}
+#join form input {
+	padding:0 20px;
+}
+#join_03 {
+	background-color:#fff;
+	width:960px;
+	height:240px;
+	font-size:12px;
+}
+#join_03 table {
+	border-collapse:collapse;
+	margin:20px 0 5px 0;
+}
+#join_03 table tr th {
+	width:320px;
+	height:60px;
+	border-top:2px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background-color:#eee;
+	font-size:18px;
+}
+#join_03 table tr td {
+	width:320px;
+	height:120px;
+	border-bottom:1px solid #ccc;
+	font-size:12px;
+	text-align:center;
+}
+#join_03 table tr td:first-child, #join_03 table tr td:nth-child(2), 
+#join_03 table tr th:first-child, #join_03 table tr th:nth-child(2) {
+	border-right:1px solid #ccc;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>yeonwoo_shoppingmall</title>
+        <!--홈페이지 메인화면은 index.html로 저장해야 서버에서 메인화면(초기화면)으로 인식함-->
+        
+        
+        <!--외부스타일시트 연동하기 href속성 경로지정, type과 rel을 꼭 같이 써줘야 함-->
+        <link href="css/index_style.css" type="text/css" rel="stylesheet">
+        <!--외부스크립트 파일 연결-->
+        <!--jquery-3.3.1.js는 제이쿼리 라이브러리를 사용하기 위해 
+        기본적으로 연결해야하는 스크립트-->
+        <script src="js/jquery-3.3.1.js"></script>
+        <!--비쥬얼슬라이드 스크립트-->
+        <script src="js/VisualSlide.js"></script>
+    </head>
+    
+    <body>
+    	<!--전체영역을 wrap으로 감싸줌-->
+    	<div id="wrap">
+        	<!--머리말영역을 표시하는 시맨틱태그(회사로고, 찾기, 네비게이션등이 들어감)-->
+        	<header>
+            	<div id="top_area">
+                	<div id="top">
+                    	<!--p태그는 본문태그-->
+                    	<p><a href="#">call +001 3913 4282</a></p>
+                        <!--목록을 만드는 태그 ul,li 꼭 함께 써야함-->
+                        <ul>
+                            <li><a href="login.html">LOGIN</a></li>
+                            <li><a href="join.html">JOIN MEMBER</a></li>
+                            <li><a href="#">MY ACCOUNT</a></li>
+                            <li><a href="css/WELCOME.html">WELCOME MSG!</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+                <div id="logo_area">
+                	<!--메뉴영역을 만드는 시멘틱테그-->
+                    <nav>
+                    	<ul>
+                        	<li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Gallery</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Pages</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div id="logo">
+                    	<a href="index_html.html"><img src="img/logo.png" alt="로고"></a>
+                    </div>
+                    
+                    <div id="sns">
+                    	<ul>
+                        	<li><a href="http://www.facebook.com"><img src="img/facebook.png" alt="페이스북">
+                            	</a>
+                            </li><!--페이스북끝-->
+                            
+                            <li><a href="https://twitter.com"><img src="img/twiter.png" alt="트위터">
+                            	</a>
+                            </li><!--트위터끝-->
+                            
+                            <li><a href="https://www.pinterest.co.kr/"><img src="img/mogi.png" alt="모지">
+                            	</a>
+                            </li><!--모지끝-->
+                            
+                            <li><a href="http://www.instagram.com"><img src="img/insta.png" alt="인스타그램">
+                            	</a>
+                            </li><!--인스타그램끝-->
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                    <div id="money">
+                    	<p>RUPIAH<span>&or;</span></p>
+                    </div>
+                    
+                </div>
+            </header>
+            
+            <!--본문영역을 표시하는 시맨틱태그(모든 컨텐츠 포함)-->
+            <section>
+            	            	<!--메인 비쥬얼 영역-->
+                <div id="visual">
+                	<!--메인이미지 3개-->
+                	<ul>
+                    	<li><a href="#"><img src="img/main_visual_1_1.jpg" alt="이미지1"></a></li>
+                        <li><a href="#"><img src="img/main_visual_1_2.jpg" alt="이미지2"></a></li>
+                        <li><a href="#"><img src="img/main_visual_1_3.jpg" alt="이미지3"></a></li>
+                    </ul>
+                    
+                    <!--동그라미버튼 3개-->                    
+                    <div id="btn">
+                    	<ul>
+                        	<li class="active">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                    </div>
+                    
+                    <!--좌우버튼-->
+                    <a href="#" class="left_btn">
+                    	<img src="img/left_btn.png" alt="왼쪽버튼">
+                    </a><!--왼쪽버튼-->
+                    <a href="#" class="right_btn">
+                    	<img src="img/right_btn.png" alt="오른쪽버튼">
+                    </a> <!--오른쪽버튼-->                   
+                </div><!--visual end-->
+                
+                
+                <div id="support">
+                	<div class="s_box"><a href="#"><img src="img/support_01.jpg" alt="s_01"></a></div>
+                    <div class="s_box" id="s_box_02"><a href="#"><img src="img/support_02.jpg" alt="s_02"></a></div>
+                    <div class="s_box"><a href="#"><img src="img/support_03.jpg" alt="s_03"></a></div>
+                </div>
+                
+                
+                <div id="feature">
+                	<h1>Spring collection</h1>
+                    
+                    <div id="f_box_area">
+                    	<div class="f_box">
+                        	<div class="small" id="s_01">
+                            	<a href="product.html" class="border">SHOP NOW</a>
+                            </div>
+                            <div class="small" id="s_02">
+                            	<a href="product.html" class="border">SHOP NOW</a>
+                            </div>
+                        </div>
+                        
+                        <div class="f_box" id="f_box_02">
+							<a href="product.html" class="border border_02">SHOP NOW</a>
+                            <!--클래스 2개 한꺼번에 주기(클래스1,클래스2). 띄어쓰기로 구분-->
+                        </div>
+                        
+                        <div class="f_box">
+                        	<div class="small" id="s_03">
+                            	<a href="#" class="border">SHOP NOW</a>
+                                </div>
+                            <div class="small" id="s_04">
+                            	<a href="#" class="border">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="collection">
+                	<h1>CATEGORL BEST</h1>
+                    
+                    <div id="c_area">
+                    	<div class="c_box"><a href="#"></a></div>
+                        <div class="c_box"><a href="#"></a></div>
+                        <div class="c_box"><a href="#"></a></div>
+                        <div class="c_box"><a href="#"></a></div>
+                        <div class="c_box"><a href="#"></a></div>
+                        <div class="c_box"><a href="#"></a></div>
+                        <div class="c_box"><a href="#"></a></div>
+                        <div class="c_box"><a href="#"></a></div>
+                    </div>
+                    
+                </div>
+                
+                <div id="brand">
+                	<h1>OUR BRAND</h1>
+                    <div id="b_area">
+                    	<a href="#"><img src="img/logo_01.png" alt="logo_01"></a>
+                        <a href="#"><img src="img/logo_02.png" alt="logo_02"></a>
+                        <a href="#"><img src="img/logo_03.png" alt="logo_03"></a>
+                        <a href="#"><img src="img/logo_04.png" alt="logo_04"></a>
+                        <a href="#"><img src="img/logo_05.png" alt="logo_05"></a>
+                        <a href="#"><img src="img/logo_06.png" alt="logo_06"></a>
+                    </div>
+                </div>
+                
+                <div id="customer">
+                	<h1>CUSTOMERS SAYS</h1>
+                    <div id="cus_area">
+                    
+                    	<div id="cus_box">
+                        	<div class="text" id="text_01">
+                            	
+                                <p>Sed ut perspiciatis<br>
+									unde omnis iste natus error sit <br>
+									voluptatem accusantium doloremque 
+                                </p>
+                                <h3>Deniel Han<br><span>interior designer</span></h3>
+                            </div>
+                        	<div class="designer"><img src="img/designer_01.jpg" alt="designer_01"></div>
+                        	<div class="designer"><img src="img/designer_02.jpg" alt="designer_02"></div>
+                            <div class="text">
+                            	
+                                <p>Sed ut perspiciatis<br>
+									unde omnis iste natus error sit <br>
+									voluptatem accusantium doloremque 
+                                </p>
+                                <h3>K. Vin<br><span>interior designer</span></h3>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            
+            </section>
+            <!--꼬리말영역을 표시하는 시맨틱태그(카피라이트, 주소, 전화번호, 패밀리사이트 등)-->
+            <footer>
+            	<div id="footer_area">
+                	<div id="footer_top">
+                    	
+                        <div id="f_menu">
+                        	<ul>
+                            	<!--주메뉴-->
+                            	<li>SHOPS
+                                    <!--서브메뉴-->
+                                	<ul class="sub">
+                                    	<li>New In</li>
+                                        <li>Women</li>
+                                        <li>Men</li>
+                                        <li>Shoes</li>
+                                        <li>Bags& Accessori </li>
+                                        <li>Top Brands</li>
+                                        <li>Sale Special Offers</li>
+                                        <li>Look Book</li>
+                                        
+                                    </ul>
+                                </li>
+                                
+                                <!--주메뉴-->
+                                <li>INFORMATION
+                                	<!--서브메뉴-->
+                                	<ul class="sub">
+                                    	<li>About Us</li>
+                                        <li>Customers Service</li>
+                                        <li>New Collection</li>
+                                        <li>Best Sellers</li>
+                                        <li>Manufactures</li>
+                                        <li>Privacy policy</li>
+                                        <li>Tems & condition</li>
+                                        <li>Blog</li>
+                                        
+                                    </ul>
+                                
+                                </li>
+                                
+                                <!--주메뉴-->
+                                <li>CUSTOMMERS SERVICE
+                                	<!--서브메뉴-->
+                                	<ul class="sub">
+                                    	<li>Search Terms</li>
+                                        <li>Advanced Search</li>
+                                        <li>Orders and Returns</li>
+                                        <li>Contact Us</li>
+                                        <li>RSS</li>
+                                        <li>Help & FAQs</li>
+                                        <li>Consultant</li>
+                                        <li>Store Locations</li>
+                                        
+                                    </ul>
+                                
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div id="f_sns">
+                        	<h3>STAY CONNECTED</h3>
+                            <ul>
+                            	<li><a href="#"><img src="img/sns_sub_01.png" alt="페이스북"></a></li>
+                                <li><a href="#"><img src="img/sns_sub_02.png" alt="트위터"></a></li>
+                                <li><a href="#"><img src="img/sns_sub_03.png" alt="인스타"></a></li>
+                                <li><a href="#"><img src="img/sns_sub_04.png" alt="핀터레스트"></a></li>
+                                <li><a href="#"><img src="img/sns_sub_05.png" alt="와이파이"></a></li>
+                            </ul>
+                            	<h3>SUBSCRIBE <i>in</i> OUR NEWS LETTER</h3>
+                                
+                                <div id="email_area">
+                                <!--input태그는 사용자가 입력 태그 / type="text"속성은 이메일 주소 입력란을 만들어주는 태그 / placeholder속성은 힌트문자-->
+                                	<input type="text" placeholder="Enter Your E-mail Address">
+                                    <button>SUBSCRIBE</button>
+                                </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="footer_bottom">
+                    	<p>© 2019 YEONWOO Fashion Store Shopify. <br>
+All Rights Reserved. Ecommerce Software by Shopify.<br>
+Designed by  MoccaLabs.com</p>
+                    </div>
+                
+                
+                </div>
+            </footer>
+            
+        </div>
+    </body>
+</html>

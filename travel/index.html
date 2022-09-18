@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>illuwa TRABEL</title>
+<!--반응형 웹사이트 제작시 뷰포트설정(장치인식) 필수-->
+<meta name="viewport" content="width=device-width, maximum-width=1, minimum-width=1, initial-width=1">
+
+<!--스포카 한산스 웹폰트 css-->
+<link href="css/spoka_font.css" type="text/css" rel="stylesheet">
+
+<!--피씨용-->
+<link href="css/illuwa_pc.css" type="text/css" rel="stylesheet">
+<!--태블릿용-->
+<link href="css/illuwa_tablet.css" type="text/css" rel="stylesheet">
+<!--모바일용-->
+<link href="css/illuwa_mobile.css" type="text/css" rel="stylesheet">
+
+
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+$(document).ready(function(e) {
+    $("#menu_btn").click(function(e) {
+        $("#nav_area").slideToggle();
+    });
+});
+
+</script>
+</head>
+
+<body>
+	<div id="wrap">
+    	<header>
+        	<div id="h_area">
+            	<div id="logo"><img src="img/logo_02.png" alt="로고"></div>
+                
+                <div id="menu_btn"><img src="img/menu_btn.png" alt="메뉴버튼"></div>
+                
+                <div id="search">
+                	<form>
+                    	<input type="search"><button></button>
+                    </form>
+                </div>
+                				
+            </div><!--h_area-->
+            
+            <div id="nav_area">
+            	<nav>
+                	<ul id="menu">
+                    	<li><a href="#">해외패키지</a></li>
+                        <li><a href="#">지유여행</a></li>
+                        <li><a href="#">테마여행</a></li>
+                        <li><a href="#">국내여행</a></li>
+                        <li><a href="#">부산/대구출발</a></li>
+                        <li><a href="#">항공원</a></li>
+                        <li><a href="#">호텔</a></li>
+                    </ul>
+                    
+                    <ul id="user">
+                    	<li><a href="#">가이드 등록하기</a></li>
+                        <li><a href="#">·</a></li>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">·</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </nav>
+            </div><!--nav_area-->
+        </header>
+        
+        <section>
+        	<div id="main_visual"></div><!--main_visual-->
+            
+            <div id="hot_area">
+            	<h4> iullwa     HOT 추천상품</h4>
+                <ul>
+                	<li>
+                    	<img src="img/p_01.jpg" alt="추천상품_01">
+                        <p class="title">LAKE TEKAPO<br><b>테카포호수</b></p>
+                        <hr>
+                        <p class="text">도시에서 멀리 떨어진 곳에서<br> 
+즐기는 밤 하늘의 은하수.</p>
+                    </li><!--첫번째 상품 끝-->
+                    
+                    <li>
+                    	<img src="img/p_02.jpg" alt="추천상품_01">
+                        <p class="title">WAITOMO CAVES<br><b>와이토모 동굴</b></p>
+                        <hr>
+                        <p class="text">수백만 마리의 반딧불이가<br> 
+내뿜는 미광의 지하터널.</p>
+                    </li><!--두번째 상품 끝-->
+                    
+                    <li>
+                    	<img src="img/p_03.jpg" alt="추천상품_01">
+                        <p class="title">MILFORD SOUND<br><b>밀포드사운드</b></p>
+                        <hr>
+                        <p class="text">깍아지는 암벽과 그 위에 폭포수,<br>
+돌고래와 물개무리의 고향.</p>
+                    </li><!--세번째 상품 끝-->
+                    
+                    <li>
+                    	<img src="img/p_04.jpg" alt="추천상품_01">
+                        <p class="title">STEWART ISLAND<br><b>스튜어트섬</b></p>
+                        <hr>
+                        <p class="text">원시 대자연과 어우러진<br>
+뉴질랜드의 짙은 석양.</p>
+                    </li><!--네번째 상품 끝-->
+                </ul>
+            </div><!--hot_area-->
+            	
+            <div id="free_area">
+            	<h4>자유여행/에어텔</h4>
+                <ul>
+                	<li>
+                    	<img src="img/p2_01.jpg" alt="레글런">
+                        <p class="f_title">다낭/호이안 4일/5일<br>
+                        종합테마파크 빈펄랜드 포함</p>
+                        <hr>
+                        <p class="f_text">모든게 낭만적인 뉴질랜드의 매력<br>
+                        [래글런해변] 빈펄리버프론트5성<br>
+                        볼거리 가득, 추억거리 한가득<br>
+                        <br></p>
+                    </li><!--첫번째 상품-->
+                    
+                    <li>
+                    	<img src="img/p2_02.jpg" alt="레글런">
+                        <p class="f_title">질랜디아/웰링턴 5박/6일<br>★특급 호텔 1박 UP</p>
+                        <hr>
+                        <p class="f_text">광활한 지역에 펼쳐진 아름다운 산림. <br>
+                        산림 속에는 신비롭고 귀여운 생명이 있는<br>
+                        신비로운 자<br></p>
+                    </li><!--첫번째 상품-->
+                    
+                    <li>
+                    	<img src="img/p2_03.jpg" alt="레글런">
+                        <p class="f_title">히네모아/로토루아호수 6일/8일<br>『 MODE 2019 특별기획 』</p>
+                        <hr>
+                        <p class="f_text">깊은과거에서 올라온 청록색 물빛의 호수<br>
+                        뉴질랜드에서 가장 유명한<br>
+                        러브스토리 배경
+                        <br></p>
+                    </li><!--첫번째 상품-->
+                    
+                    <li>
+                    	<img src="img/p2_04.jpg" alt="레글런">
+                        <p class="f_title">타네마후타/마눌 7/8일<br>산악열차 + 케이블카 탑승</p>
+                        <hr>
+                        <p class="f_text">
+                        뉴질랜드에 현존하는 최고의 <br>
+                        카우리 나무 숲으로 TANE MAHUTA라는 <br>
+                        세계에서 제일 큰 카우리 나무 정령이 존재<br></p>
+
+                    </li><!--첫번째 상품-->
+                </ul>
+            </div><!--free_area-->
+        </section>
+        
+        <footer>
+        	<div id="f_area">
+            	<div id="f_logo"><img src="img/travel_plan.png"></div><!--f_logo-->
+                
+                <div id="f_info">
+                	<p>상호명 :(주)일루와여행사&amp;&amp;&amp;&amp;       
+                    대표:최선남&amp;&amp;&amp;&amp;      
+                    <span>주소 : 서울특별시 강남구 논현로 507, 1009(역삼동)</span><br>
+                    
+                    사업자 등록번호:105-86-74738[사업자정보확인]&amp;&amp;&amp;&amp;      
+                    통신판매업신고번호:2019-경기오산-03097호<br><br>
+                    
+                    관광사업자 등록번호-국내여행업:2011-000032/ 
+                    <span>국외여행업 : 2011-00006&amp;&amp;&amp;&amp;
+                    9영업보증보험 : 22억1천만원</span><br>
+                     
+                    가입여행상담:1644-4599&amp;&amp;&amp;&amp;    
+                    항공권상담:1577-7798&amp;&amp;&amp;&amp;     
+                    <span>팩스:02-3273-6593&amp;&amp;&amp;&amp;   
+                    개인정보관리 책임자:정경인[개인보호처리방침]</span><br>
+                    
+                    ※ 부득이한 사정에 의해 여행일정이 변경되는 경우 
+                    <span>여행자의 사전 동의를 받습니다.</span><br><br>
+                    
+                    www.hanitour.com의 모든 고객서비스는 (주)하니여행사에서 진행하며, 
+                    <span>여행정보는 (주)하나투어가 제공하고 있습니다.</span></p>
+                </div><!--f_info-->
+            </div><!--f_area-->
+        </footer>
+    </div><!--wrap-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

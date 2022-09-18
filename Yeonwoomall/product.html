@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>yeonwoo_shoppingmall</title>
+        <!--홈페이지 메인화면은 index.html로 저장해야 서버에서 메인화면(초기화면)으로 인식함-->
+        
+        
+        <!--외부스타일시트 연동하기 href속성 경로지정, type과 rel을 꼭 같이 써줘야 함-->
+        <link href="css/index_style.css" type="text/css" rel="stylesheet">
+        
+        <!--/*프로덕트 스타일 시트 연동하기*/-->
+        <link href="css/product_style.css" type="text/css" rel="stylesheet">
+        
+        
+        
+        <!--외부스크립트 파일 연결-->
+        <!--jquery-3.3.1.js는 제이쿼리 라이브러리를 사용하기 위해 
+        기본적으로 연결해야하는 스크립트-->
+        <script src="js/jquery-3.3.1.js"></script>
+        <!--비쥬얼슬라이드 스크립트-->
+        <script src="js/VisualSlide.js"></script>
+    </head>
+    
+    <body>
+    	<!--전체영역을 wrap으로 감싸줌-->
+    	<div id="wrap">
+        	<!--머리말영역을 표시하는 시맨틱태그(회사로고, 찾기, 네비게이션등이 들어감)-->
+        	<header>
+            	<div id="top_area">
+                	<div id="top">
+                    	<!--p태그는 본문태그-->
+                    	<p><a href="#">call +001 3913 4282</a></p>
+                        <!--목록을 만드는 태그 ul,li 꼭 함께 써야함-->
+                        <ul>
+                            <li><a href="login.html">LOGIN</a></li>
+                            <li><a href="join.html">JOIN MEMBER</a></li>
+                            <li><a href="#">MY ACCOUNT</a></li>
+                            <li><a href="css/WELCOME.html">WELCOME MSG!</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+                <div id="logo_area">
+                	<!--메뉴영역을 만드는 시멘틱테그-->
+                    <nav>
+                    	<ul>
+                        	<li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Gallery</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Pages</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div id="logo">
+                    	<a href="index_html.html"><img src="img/logo.png" alt="로고"></a>
+                    </div>
+                    
+                    <div id="sns">
+                    	<ul>
+                        	<li><a href="http://www.facebook.com"><img src="img/facebook.png" alt="페이스북">
+                            	</a>
+                            </li><!--페이스북끝-->
+                            
+                            <li><a href="https://twitter.com"><img src="img/twiter.png" alt="트위터">
+                            	</a>
+                            </li><!--트위터끝-->
+                            
+                            <li><a href="https://www.pinterest.co.kr/"><img src="img/mogi.png" alt="모지">
+                            	</a>
+                            </li><!--모지끝-->
+                            
+                            <li><a href="http://www.instagram.com"><img src="img/insta.png" alt="인스타그램">
+                            	</a>
+                            </li><!--인스타그램끝-->
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                    <div id="money">
+                    	<p>RUPIAH<span>&or;</span></p>
+                    </div>
+                    
+                </div>
+            </header>
+            
+            <!--본문영역을 표시하는 시맨틱태그(모든 컨텐츠 포함)-->
+            <section>
+            	<article id="product_area">
+                	<div id="product">
+                    	<div id="tab_menu">
+                        	<ul>
+                            	<!--첫번째 탭 제목-->
+                            	<li>
+                             		
+                                    <input type="radio" name="tab" id="t1">
+                                    <label for="t1"><img src="img/product_cut_06_01.jpg" alt="러브어페어작은사이즈"></label>
+                                    <div class="tab_content"><img src="img/product_cut_06.jpg" alt="러브어페어"></div>
+                             	</li>
+                                
+                                <!--두번째 탭 제목-->
+                            	<li>
+                             		
+                                    <input type="radio" name="tab" id="t2">
+                                    <label for="t2"><img src="img/product_cut_07_01.jpg" alt="러브어페어작은사이즈"></label>
+                                    <div class="tab_content"><img src="img/product_cut_07.jpg" alt="러브어페어"></div>
+                             	</li>
+                                
+                                <!--세번째 탭 제목-->
+                            	<li>
+                             		
+                                    <input type="radio" name="tab" id="t3">
+                                    <label for="t3"><img src="img/product_cut_03_01.jpg" alt="러브어페어작은사이즈"></label>
+                                    <div class="tab_content"><img src="img/product_cut_03.jpg" alt="러브어페어"></div>
+                             	</li>
+                                
+                                <!--네번째 탭 제목-->
+                            	<li>
+                             		
+                                    <input type="radio" name="tab" id="t4">
+                                    <label for="t4"><img src="img/product_cut_04_01.jpg"> </label>
+                                    <div class="tab_content"><img src="img/product_cut_04.jpg" alt="러브어페어"></div>
+                             	</li>
+                                
+                                <!--다섯번째 탭 제목-->
+                            	<li>
+                             		
+                                    <input type="radio" name="tab" id="t5">
+                                    <label for="t5"><img src="img/product_cut_05_01.jpg" alt="러브어페어작은사이즈"></label>
+                                    <div class="tab_content"><img src="img/product_cut_05.jpg" alt="러브어페어"></div>
+                            </ul>
+                        </div><!--tab_menu-->
+                        
+                        <div id="p_option">
+                        	<p>하이커버피스) 키스풀 (모스트원사)<br><span>4color</span></p>
+                            <form>
+                            <table>
+                            	<tr>
+                                	<td>PRICE</td>
+                                    <td>93,500 won 
+                                    <button id="cal">버튼</button>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                	<td>혜택할인</td>
+                                    <td>9,350 won(10%off) 
+                                    <button id="coupon">쿠폰받기</button>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                	<td>yw</td>
+                                    <td>0 won </td>
+                                </tr>
+                                
+                                <tr>
+                                	<td>할인적용가</td>
+                                    <td>84,150 won(10%off)</td>
+                                </tr>
+                                
+                                <tr>
+                                	<td>배송비</td>
+                                    <td>2,500 won </td>
+                                </tr>
+                                
+                                <tr>
+                                	<td>배송정보</td>
+                                    <td>2~3일(휴일제외) </td>
+                                </tr>
+                            </table>
+                            
+                            <hr>
+                            
+                            <table>
+                            	<tr>
+                                	<td>색상선택</td>
+                                    <td>아이콘 삽입</td>
+                                </tr>
+                                
+                                <tr>
+                                	<td>색상이름</td>
+                                    <td>
+                                    	<label for="color_name"></label>
+                                    	<select id="color_name" name="color_name">
+                                        	<option value="bladk">블랙</option>
+                                            <option value="dark">다크브라운</option>
+                                            <option value="choco">초코브라운</option>
+                                            <option value="brown">브라운</option>
+                                        </select>
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                	<td>주문수량</td>
+                                    <td>
+                                    	<label for="order"></label>
+                                        <select id="order" name="order">
+                                        	<option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            
+                            <div class="cart"><a href="#">ADD TO CART</a></div>
+                            <div class="btn_area">
+                            	<a class="wish" href="#">WISH LIST</a>
+                                <a class="buy" href="#">BUY NOW</a>
+                                <a class="non_user" href="#">비회원구매하기</a>
+                            </div>
+                            </form>
+                            <ul class="p_sns">
+                            	<li><a href="#">f</a></li>
+                                <li><a href="#">t</a></li>
+                                <li><a href="#">p</a></li>
+                                <li><a href="#">g</a></li>
+                                <li><a href="#">t</a></li>
+                                <li><a href="#">k</a></li>
+                                
+                            </ul>
+                        </div><!--p_option-->
+                        
+                    </div><!--product-end-->
+                
+                </article>
+            
+            </section>
+            <!--꼬리말영역을 표시하는 시맨틱태그(카피라이트, 주소, 전화번호, 패밀리사이트 등)-->
+            <footer>
+            	<div id="footer_area">
+                	<div id="footer_top">
+                    	
+                        <div id="f_menu">
+                        	<ul>
+                            	<!--주메뉴-->
+                            	<li>SHOPS
+                                    <!--서브메뉴-->
+                                	<ul class="sub">
+                                    	<li>New In</li>
+                                        <li>Women</li>
+                                        <li>Men</li>
+                                        <li>Shoes</li>
+                                        <li>Bags& Accessori </li>
+                                        <li>Top Brands</li>
+                                        <li>Sale Special Offers</li>
+                                        <li>Look Book</li>
+                                        
+                                    </ul>
+                                </li>
+                                
+                                <!--주메뉴-->
+                                <li>INFORMATION
+                                	<!--서브메뉴-->
+                                	<ul class="sub">
+                                    	<li>About Us</li>
+                                        <li>Customers Service</li>
+                                        <li>New Collection</li>
+                                        <li>Best Sellers</li>
+                                        <li>Manufactures</li>
+                                        <li>Privacy policy</li>
+                                        <li>Tems & condition</li>
+                                        <li>Blog</li>
+                                        
+                                    </ul>
+                                
+                                </li>
+                                
+                                <!--주메뉴-->
+                                <li>CUSTOMMERS SERVICE
+                                	<!--서브메뉴-->
+                                	<ul class="sub">
+                                    	<li>Search Terms</li>
+                                        <li>Advanced Search</li>
+                                        <li>Orders and Returns</li>
+                                        <li>Contact Us</li>
+                                        <li>RSS</li>
+                                        <li>Help & FAQs</li>
+                                        <li>Consultant</li>
+                                        <li>Store Locations</li>
+                                        
+                                    </ul>
+                                
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div id="f_sns">
+                        	<h3>STAY CONNECTED</h3>
+                            <ul>
+                            	<li><a href="#"><img src="img/sns_sub_01.png" alt="페이스북"></a></li>
+                                <li><a href="#"><img src="img/sns_sub_02.png" alt="트위터"></a></li>
+                                <li><a href="#"><img src="img/sns_sub_03.png" alt="인스타"></a></li>
+                                <li><a href="#"><img src="img/sns_sub_04.png" alt="핀터레스트"></a></li>
+                                <li><a href="#"><img src="img/sns_sub_05.png" alt="와이파이"></a></li>
+                            </ul>
+                            	<h3>SUBSCRIBE <i>in</i> OUR NEWS LETTER</h3>
+                                
+                                <div id="email_area">
+                                <!--input태그는 사용자가 입력 태그 / type="text"속성은 이메일 주소 입력란을 만들어주는 태그 / placeholder속성은 힌트문자-->
+                                	<input type="text" placeholder="Enter Your E-mail Address">
+                                    <button>SUBSCRIBE</button>
+                                </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="footer_bottom">
+                    	<p>© 2019 YEONWOO Fashion Store Shopify. <br>
+All Rights Reserved. Ecommerce Software by Shopify.<br>
+Designed by  MoccaLabs.com</p>
+                    </div>
+                
+                
+                </div>
+            </footer>
+            
+        </div>
+    </body>
+</html>

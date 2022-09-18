@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* illuwa mobile 용 */
+
+/*모바일용 미디어쿼리  - 해상도가 480px 이하일 때*/
+@media screen and (max-width:480px){
+	#h_area {
+		height:130px;
+	}
+	#logo {
+		width:46%;
+		height:60px;
+		padding-left:4%;
+	}
+	#logo img {
+		height:36px;
+		margin:12px 0;
+	}
+	#menu_btn {
+		width:46%;
+		height:60px;
+		padding-right:4%;
+	}
+	#menu_btn img {
+		height:16px;
+		margin:22px 0;
+	}
+	#search {
+		height:70px;
+	}
+	#search form {
+		width:92%;
+		height:36px;
+		border-radius:18px;
+		margin-top:30px;
+	}
+	#search form {
+		height:36px;
+	}
+	#search form button {
+		height:36px;
+		background-size:26px;
+	}
+	#nav_area {
+		display:none;
+		height:130px;
+		padding-bottom:15px;
+	}
+	nav {
+		height:130px;
+	}
+	#user {
+		height:30px;
+		margin-top:30px;
+	}
+	#user li {
+		height:30px;
+		line-height:30px;
+		font-size:16px;
+		padding:0 2px;
+	}
+	#menu {
+		height:60px;
+		margin-top:10px;
+		flex-flow:row wrap;
+	}
+	#menu li {
+		font-size:15px;
+		height:30px;
+		line-height:30px;
+		padding:0 6px;
+	}
+	#main_visual {
+		margin-top:20px;
+		height:360px;
+		background-image:url(../img/mobile_02.jpg);
+		background-size:100%;
+	}
+	#hot_area ,#free_area {
+		width:92%;
+		margin-top:10px;
+	}
+	#free_area {
+		margin-top:30px;
+	}
+	#hot_area h4, #free_area h4 {
+		font-size:16px;
+		height:50px;
+	}
+	#hot_area ul li:last-child,
+	#free_area ul li:last-child {
+		display:block;
+	}
+	#hot_area ul li,
+	#free_area ul li {
+		width:46%;
+	}
+	.title, .f_title {
+		font-size:12px;
+		line-height:18px;
+		padding:5px 0;
+	}
+	.f_title {
+		font-size:11px;
+	}
+	.title b {
+		font-size:16px;
+	}
+	.text, .f_text {
+		font-size:10px;
+		padding:7px 0 20px 0;
+	}
+	footer {
+		margin-top:40px;
+		padding:25px 0 35px 0;
+	}
+	#f_area {
+		width:92%;
+		flex-flow:row wrap;
+	}
+	#f_logo {
+		text-align-last:center;
+	}
+	#f_logo img {
+		height:40px;
+	}
+	#f_info {
+		font-size:10px;
+		line-height:16px;
+		padding-top:10px;
+		text-align:center;
+	}
+	#f_info span {
+		display:block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
