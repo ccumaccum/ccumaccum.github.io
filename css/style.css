@@ -117,8 +117,8 @@ ul.lv2 li:hover a{color:rgb(235, 5, 78); background: rgb(247, 214, 223);}
 .popUp button{float: right; padding:4px; cursor: pointer; margin-top: 10px;}
 
 /* slideContainer ---------------------------------------------------------------------------------------- */
-.slideContainer{width: 100vw; height: 485px;overflow: hidden;}
-.slide{position:relative;}
+.slideContainer{width: 100vw; height: 485px;overflow: hidden;margin:auto;}
+.slide{position:relative;margin:auto;text-align:center;}
 .slide p{position:absolute; left:0; top:0; padding:10px;font-size: 0px;}
 
 /* content ---------------------------------------------------------------------------------------- */

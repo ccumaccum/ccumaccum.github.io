@@ -83,8 +83,8 @@ function setData() {
 
 function searchData() {
 	let contentDiv = document.getElementsByName("content_div");
-	for(let i=0; i<contentDiv.length; i++){
-		contentDiv[i].style.display = 'none';
+	for(let data of contentDiv){
+		data.style.display = 'none';
 	}
 	
 	for(let i=0; i<contentDiv.length; i++){
@@ -119,8 +119,12 @@ function searchData() {
 			}
 			console.log('BEST');
 		}else if(BEST === false && NEW === true){
-			if(dataSearch.split(', ').includes(searchKeyword) && dataType == '2'){
-				contentDiv[i].style.display = 'block';
+			if(searchKeyword == ''){
+				if(dataType == '2')contentDiv[i].style.display = 'block';
+			}else {
+				if(dataSearch.split(', ').includes(searchKeyword) && dataType == '2'){
+					contentDiv[i].style.display = 'block';
+				}
 			}
 			console.log('NEW');
 		}
