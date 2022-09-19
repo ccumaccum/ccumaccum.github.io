@@ -65,16 +65,19 @@ function setData() {
 				}
 			}
 		}
-		
+		let br = document.createElement('br');
 		aTag.setAttribute('onclick' , 'getData("'+(Number(data)+1)+'");');
 		aTag.appendChild(image);
+		aTag.appendChild(br);
+
 		div.appendChild(type);
+
 		div.appendChild(aTag);
+		
 		div.appendChild(box);
 		div.appendChild(category);
 		div.appendChild(title);
 		div.appendChild(tag);
-		//div.appendChild(detail);
 	
 		totDiv.appendChild(div);
 		contentsBox.appendChild(totDiv);

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+
+*{
+	font-size:10px;
+}
+	
+/* content_card */
+.content_card_box{
+	width: 100%;
+	height:auto;
+	margin:auto;
+}
+
+.content_div{
+	width:33rem;
+	height:38rem;
+}
+
+
+
+
+
+
+}
